@@ -19,6 +19,10 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
     public function boot(): void
     {
         $this->publishes([
+            __DIR__ . '/../config/jacklove315-modal.php' => config_path('jacklove315-modal.php'),
+        ]);
+
+        $this->publishes([
             __DIR__ . '/../public' => public_path('vendor/jacklove315/modal'),
         ], 'public');
 
