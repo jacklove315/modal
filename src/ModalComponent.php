@@ -9,7 +9,7 @@ abstract class ModalComponent extends Component implements Contract
 {
     public static function closeModalOnClickAway(): bool
     {
-        return config('jacklove315-modal.component_defaults.close_modal_on_click_away', false);
+        return config('jacklove315-modal.component_defaults.close_modal_on_click_away', true);
     }
 
     public static function closeModalOnEscape(): bool
