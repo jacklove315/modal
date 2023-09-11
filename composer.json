@@ -1,14 +1,14 @@
 {
-  "name": "jlove/modal",
+  "name": "jacklove315/modal",
   "autoload": {
     "psr-4": {
-      "Jlove\\Modal\\": "src/"
+      "Jacklove315\\Modal\\": "src/"
     }
   },
   "authors": [
     {
       "name": "jack love",
-      "email": "jlove@wonde.com"
+      "email": "jacklove315@icloud.com"
     }
   ],
   "require": {
@@ -16,7 +16,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Jlove\\Modal\\ServiceProvider"
+        "Jacklove315\\Modal\\ServiceProvider"
       ]
     }
   }

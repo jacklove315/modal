@@ -1,6 +1,6 @@
 <?php
 
-namespace Jlove\Modal;
+namespace Jacklove315\Modal;
 
 use Exception;
 use Livewire\Component;

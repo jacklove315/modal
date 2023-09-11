@@ -1,8 +1,8 @@
 <?php
 
-namespace Jlove\Modal;
+namespace Jacklove315\Modal;
 
-use Jlove\Modal\Contracts\ModalComponent as Contract;
+use Jacklove315\Modal\Contracts\ModalComponent as Contract;
 use Livewire\Component;
 
 abstract class ModalComponent extends Component implements Contract

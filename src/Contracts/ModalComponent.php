@@ -1,6 +1,6 @@
 <?php
 
-namespace Jlove\Modal\Contracts;
+namespace Jacklove315\Modal\Contracts;
 
 interface ModalComponent
 {
