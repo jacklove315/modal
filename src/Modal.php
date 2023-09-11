@@ -19,8 +19,12 @@ class Modal extends Component
         ];
     }
 
-    public function openModal($componentName, array $componentAttributes = []): void
+    public function openModal($componentName, string|array $componentAttributes = [], string $attributeKey = 'modelId'): void
     {
+        if (!is_array($componentAttributes)){
+            $componentAttributes = [$attributeKey => $componentAttributes];
+        }
+
         $requiredInterface = \Jacklove315\Modal\Contracts\ModalComponent::class;
         $componentClass = app('livewire')->getClass($componentName);
         $reflect = new ReflectionClass($componentClass);
