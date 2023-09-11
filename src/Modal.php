@@ -9,8 +9,8 @@ use ReflectionClass;
 class Modal extends Component
 {
     public array $activeComponent = [];
-    public bool $showModal = false;
-    public array $options = [];
+    public bool  $showModal       = false;
+    public array $options         = [];
 
     public function getListeners(): array
     {
@@ -21,7 +21,7 @@ class Modal extends Component
 
     public function openModal($componentName, array $componentAttributes = []): void
     {
-        $requiredInterface = \Jlove\Modal\Contracts\ModalComponent::class;
+        $requiredInterface = \Jacklove315\Modal\Contracts\ModalComponent::class;
         $componentClass = app('livewire')->getClass($componentName);
         $reflect = new ReflectionClass($componentClass);
 
@@ -53,6 +53,6 @@ class Modal extends Component
 
     public function render()
     {
-        return view('jlove::modal');
+        return view('jacklove315::modal');
     }
 }

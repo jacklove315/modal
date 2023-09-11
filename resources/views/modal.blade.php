@@ -1,5 +1,5 @@
 <div>
-    <script>{!! file_get_contents(public_path() . '/vendor/jlove/modal/js/modal.js') !!}</script>
+    <script>{!! file_get_contents(public_path() . '/vendor/jacklove315/modal/js/modal.js') !!}</script>
 
     <div
         x-data="LivewireModal()"

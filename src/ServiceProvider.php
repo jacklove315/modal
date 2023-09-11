@@ -1,6 +1,6 @@
 <?php
 
-namespace Jlove\Modal;
+namespace Jacklove315\Modal;
 
 use Livewire\Livewire;
 
@@ -19,11 +19,11 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
     public function boot(): void
     {
         $this->publishes([
-            __DIR__ . '/../public' => public_path('vendor/jlove/modal'),
+            __DIR__ . '/../public' => public_path('vendor/jacklove315/modal'),
         ], 'public');
 
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'jlove');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'jacklove315');
 
-        Livewire::component('jlove-modal', Modal::class);
+        Livewire::component('jacklove315-modal', Modal::class);
     }
 }
