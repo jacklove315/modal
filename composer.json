@@ -12,5 +12,12 @@
     }
   ],
   "require": {
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Jlove\\Modal\\ServiceProvider"
+      ]
+    }
   }
 }
