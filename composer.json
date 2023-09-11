@@ -1,15 +1,16 @@
 {
-    "name": "jlove/modal",
-    "autoload": {
-        "psr-4": {
-            "Jlove\\Modal\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "jack love",
-            "email": "jlove@wonde.com"
-        }
-    ],
-    "require": {}
+  "name": "jlove/modal",
+  "autoload": {
+    "psr-4": {
+      "Jlove\\Modal\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "jack love",
+      "email": "jlove@wonde.com"
+    }
+  ],
+  "require": {
+  }
 }
