@@ -19,10 +19,10 @@ class Modal extends Component
         ];
     }
 
-    public function openModal($componentName, string|array $componentAttributes = [], string $attributeKey = 'modelId'): void
+    public function openModal($componentName, string|array $componentAttributes = []): void
     {
-        if (!is_array($componentAttributes)){
-            $componentAttributes = [$attributeKey => $componentAttributes];
+        if (is_string($componentAttributes)) {
+            $componentAttributes = (array)json_decode($componentAttributes);
         }
 
         $requiredInterface = \Jacklove315\Modal\Contracts\ModalComponent::class;
