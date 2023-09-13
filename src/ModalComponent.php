@@ -9,17 +9,17 @@ abstract class ModalComponent extends Component implements Contract
 {
     public static function closeModalOnClickAway(): bool
     {
-        return config('jacklove315-modal.component_defaults.close_modal_on_click_away', true);
+        return config('jl-modal.component_defaults.close_modal_on_click_away', true);
     }
 
     public static function closeModalOnEscape(): bool
     {
-        return config('jacklove315-modal.component_defaults.close_modal_on_escape', false);
+        return config('jl-modal.component_defaults.close_modal_on_escape', false);
     }
 
     public static function modalSize(): string
     {
-        return config('jacklove315-modal.component_defaults.modal_size', 'md');
+        return config('jl-modal.component_defaults.modal_size', 'md');
     }
 
     public function closeModal(): void

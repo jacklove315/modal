@@ -19,15 +19,11 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
     public function boot(): void
     {
         $this->publishes([
-            __DIR__ . '/../config/jacklove315-modal.php' => config_path('jacklove315-modal.php'),
+            __DIR__ . '/../config/jacklove315-modal.php' => config_path('jl-modal.php'),
         ]);
-
-        $this->publishes([
-            __DIR__ . '/../public' => public_path('vendor/jacklove315/modal'),
-        ], 'public');
 
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'jacklove315');
 
-        Livewire::component('jacklove315-modal', Modal::class);
+        Livewire::component('jl-modal', Modal::class);
     }
 }
