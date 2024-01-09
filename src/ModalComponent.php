@@ -24,6 +24,6 @@ abstract class ModalComponent extends Component implements Contract
 
     public function closeModal(): void
     {
-        $this->emit('closeModal');
+        $this->dispatch('closeModal');
     }
 }
