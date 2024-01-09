@@ -5,6 +5,7 @@ namespace Jacklove315\Modal;
 use Exception;
 use Livewire\Component;
 use ReflectionClass;
+use Livewire\Mechanisms\ComponentRegistry;
 
 class Modal extends Component
 {
@@ -26,7 +27,7 @@ class Modal extends Component
         }
 
         $requiredInterface = \Jacklove315\Modal\Contracts\ModalComponent::class;
-        $componentClass = app('livewire')->getClass($componentName);
+        $componentClass = app(ComponentRegistry::class)->getClass($componentName);
         $reflect = new ReflectionClass($componentClass);
 
         if ($reflect->implementsInterface($requiredInterface) === false) {
