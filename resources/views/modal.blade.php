@@ -64,7 +64,7 @@
             <!-- backdrop-->
             <div
                 x-on:click="closeModalOnClickAway()"
-                class="fixed inset-0 bg-black/50 z-10 flex justify-center items-center">
+                class="fixed inset-0 bg-black/50 z-30 flex justify-center items-center">
 
                 <!-- container -->
                 <div
