@@ -44,7 +44,7 @@ class Modal extends Component
             ], $componentAttributes),
         ];
 
-        $this->dispatchBrowserEvent('modal-mounted');
+        $this->dispatch('modal-mounted');
 
         $this->showModal = true;
     }
